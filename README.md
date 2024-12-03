@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8"> <!-- 文字エンコーディングをUTF-8に設定 -->
     <title>ゴミ箱マップ</title>
@@ -17,7 +17,7 @@
         button {
             display: block;
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             font-size: 16px;
             background-color: #4CAF50;
@@ -25,6 +25,7 @@
             border: none;
             cursor: pointer;
             text-align: center;
+            border-radius: 5px;
         }
 
         button:hover {
@@ -37,16 +38,19 @@
             font-family: Arial, sans-serif;
             padding: 10px;
             background-color: #f4f4f4;
+            box-sizing: border-box;
         }
 
         h1 {
             font-size: 24px;
             text-align: center;
+            margin-top: 10px;
         }
 
         p {
             font-size: 16px;
             text-align: center;
+            margin: 5px 0;
         }
 
         /* モバイル用のセンタリング */
@@ -54,6 +58,22 @@
             text-align: center;
         }
 
+        /* メディアクエリ（モバイル端末対応） */
+        @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
